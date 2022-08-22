@@ -48,7 +48,7 @@ function Card({
     }
 
     return (
-        <div className='w-[200px] min-h-[300px] flex-col bg-[#21262A] p-2' style={{ borderRadius }}>
+        <div className='w-[200px] min-h-[300px] flex-col bg-[#21262A] p-2 hover:bg-[#343A3F] cursor-pointer transition-all' style={{ borderRadius }}>
             <Image src={image} width={200} height={200} style={{ borderRadius }} />
             <div >
                 <Title />
