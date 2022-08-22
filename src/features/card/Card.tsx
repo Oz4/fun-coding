@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { Box } from "@chakra-ui/react"
 
 interface ICardProps {
 
@@ -10,6 +11,10 @@ interface ICardProps {
     footerRightContent: string | React.ReactNode
     borderRadius?: "0.25rem" | "0.5rem" | "1rem" | string
     padding?: "0.25rem" | "0.5rem" | "1rem" | string
+    width?: string
+    minHeight?: string
+    bgColor?: string
+    hoverColor?: string
 }
 
 function Card({
@@ -18,7 +23,12 @@ function Card({
     image,
     footerLeftContent,
     footerRightContent,
-    borderRadius = "0"
+    borderRadius = "0",
+    padding = "2",
+    width = "200px",
+    minHeight = "200px",
+    bgColor = "#21262A",
+    hoverColor = "#343A3F",
 }: ICardProps) {
 
     const Title = () => {
@@ -40,15 +50,26 @@ function Card({
     const Footer = () => {
 
         return (
-            <div className="w-full flex justify-between items-center self-end text-sm pt-2 border-t  border-t-[#FFFFFF29]">
+            <div className="w-full flex justify-between items-center self-end text-sm pt-2 border-t border-t-[#FFFFFF29]">
                 <div>{footerLeftContent}</div>
                 <div>{footerRightContent}</div>
             </div>
         )
     }
 
+
     return (
-        <div className='w-[200px] min-h-[300px] flex-col bg-[#21262A] p-2 hover:bg-[#343A3F] cursor-pointer transition-all' style={{ borderRadius }}>
+        <Box
+            className={`flex-col cursor-pointer transition-all text-white`}
+            borderRadius={borderRadius}
+            padding={padding}
+            width={width}
+            minHeight={minHeight}
+            bg={bgColor}
+            _hover={{
+                bg: hoverColor,
+            }}
+        >
             <Image src={image} width={200} height={200} style={{ borderRadius }} />
             <div >
                 <Title />
@@ -56,7 +77,7 @@ function Card({
                 <Footer />
             </div>
 
-        </div>
+        </Box>
     )
 
 }
