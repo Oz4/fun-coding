@@ -13,7 +13,7 @@ function card() {
     return (
         <Box className='w-full h-[100vh] flex justify-center items-center bg-[#121619]'>
 
-            <Box className='flex min-w-[600px] justify-between items-center flex-wrap'>
+            <Box className='flex flex-row w-[600px] justify-between items-center flex-wrap p-4'>
 
                 <Box>
 
