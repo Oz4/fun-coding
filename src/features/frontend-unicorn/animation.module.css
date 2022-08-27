@@ -1,0 +1,22 @@
+.particle {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: -45px;
+    left: 41px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    animation: particle-animation 4s linear infinite;
+}
+
+@keyframes particle-animation {
+    0% {
+        background-color: #ab66ff;
+    }
+    50% {
+        background-color: #f8e71c;
+    }
+    100% {
+        background-color: #ff66f9;
+    }
+}
