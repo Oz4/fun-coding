@@ -41,7 +41,7 @@ function Page() {
                     "https://looksrare.mo.cloudinary.net/0x31d45de84fdE2fB36575085e05754a4932DD5170/0xafcf4c7790bbc4833d993ba2aa764e4606b51853318078e3c7ffea4ba4d16d15?resource_type=image&f=auto&c=limit&w=1600&q=auto",
                     "https://looksrare.mo.cloudinary.net/0x31d45de84fdE2fB36575085e05754a4932DD5170/0x68614b328edcecbb3553bbbebd32e760792f6fa7635a0896c52e0c4f4f459467?resource_type=image&f=auto&c=limit&w=1600&q=auto",
                 ]}
-                left={"26%"}
+                left={"25.25%"}
                 right={undefined}
             />
 
@@ -62,7 +62,7 @@ function Page() {
                     "https://looksrare.mo.cloudinary.net/0x31d45de84fdE2fB36575085e05754a4932DD5170/0xe52cb0547c3aa4209619be6a6ad48abe616e687bd961f6eca1487f83d1da468f?resource_type=image&f=auto&c=divmit&w=1600&q=auto",
                 ]}
                 left={undefined}
-                right="26%"
+                right="25.25%"
             />
 
             <Track

@@ -16,11 +16,17 @@ function Track({
     right = undefined,
 }: TrackProps) {
 
-    const { width, height } = useWindowResize()
+    const { width } = useWindowResize()
 
+    const imageWidth = width * 0.24
+
+    const PADDING = 16
+
+    const animateYDistance = (imageWidth * (images.length - 6)) + (PADDING * (images.length - 6))
+    
     const marqueeVariantsUp = {
         animate: {
-            y: [-width, -2616],
+            y: [0, -animateYDistance],
             transition: {
                 y: {
                     repeat: Infinity,
@@ -34,7 +40,7 @@ function Track({
 
     const marqueeVariantsDown = {
         animate: {
-            y: [width, 2616],
+            y: [0 + width, animateYDistance],
             transition: {
                 y: {
                     repeat: Infinity,
@@ -47,18 +53,21 @@ function Track({
     };
 
     let style: MotionStyle | undefined = {}
+
     if (direction === 'up')
-        style = { top: 0, left, right }
+        style = { top: 0, left, right, maxWidth: imageWidth + "px" }
+
     else if (direction === 'down')
         style = {
             bottom: 0,
             right,
             left,
+            maxWidth: imageWidth + "px"
         }
 
     return (
         <motion.div
-            className='max-w-[420px] absolute'
+            className='absolute'
             style={style}
             variants={direction === "up" ? marqueeVariantsUp : marqueeVariantsDown}
             animate="animate"
