@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 
 export const useWindowResize = () => {
     const [windowSize, setWindowSize] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight,
+        width: 0,
+        height: 0,
     });
 
     const debounce = (func: any, wait: number) => {
@@ -25,6 +25,11 @@ export const useWindowResize = () => {
         //         height: window.innerHeight,
         //     });
         // }, 100);
+
+        setWindowSize({
+            width: window.innerWidth,
+            height: window.innerHeight,
+        });
 
         const handleResize = () => {
             setWindowSize({
