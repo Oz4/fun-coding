@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Heaven or Las Vegas",
+        "artist":"Cocteau Twins",
+        "image":"https://i.scdn.co/image/ab67616d00001e022be08c60dcb4b5608abbe61e"
+    },
+    {
+        "title": "Odessa",
+        "artist":"The Bee Gees",
+        "image":"https://i.scdn.co/image/ab67616d00001e02439b4ea76377193a279e2cb6"
+    },
+    {
+        "title": "Animals",
+        "artist":"Pink Floyd",
+        "image":"https://i.scdn.co/image/ab67616d00001e021a0e01b6cd607bbc41c3ff4b"
+    },
+    {
+        "title": "Rumours",
+        "artist":"Fleetwood Mac",
+        "image":"https://i.scdn.co/image/ab67616d00001e020001af4f80be77069fc8fd41"
+    },
+    {
+        "title": "Blue Train",
+        "artist":"John Coltrane",
+        "image":"https://i.scdn.co/image/ab67616d00001e02611ea3fb281f7956ffd33b77"
+    },
+    {
+        "title": "Born to Run",
+        "artist":"Bruce Springsteen",
+        "image":"https://i.scdn.co/image/ab67616d00001e02503143a281a3f30268dcd9f9"
+    },
+    {
+        "title": "Elvis Presley",
+        "artist":"Elvin Presley",
+        "image":"https://i.scdn.co/image/ab67616d00001e02f45cec7e72b9dec993c18872"
+    }
+]
